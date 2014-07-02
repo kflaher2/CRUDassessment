@@ -1,0 +1,16 @@
+
+
+<div class="container">
+  <h1> Index of Ideas </h1>
+  <% @ideas.each do |idea| %>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+        
+          <a href="/ideas/<%= idea.id %>"</a> <%= idea.idea %> 
+        
+        </div>
+      </div>
+    </div>
+  <% end %>
+ </div>    
